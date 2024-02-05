@@ -7,6 +7,7 @@ import { redirect } from 'next/navigation';
 import { ChapterTitleForm } from './_components/ChapterTitleForm';
 import { ChapterDescriptionForm } from './_components/chapter-description-form';
 import { ChapterAccessForm } from './_components/chapter-access-form';
+import { ChapterVideoForm } from './_components/chapter-video-form';
 
 const ChapterIdPage = async ({
   params,
@@ -55,7 +56,7 @@ const ChapterIdPage = async ({
             <div className="flex flex-col gap-y-2">
               <h1 className="text-2xl font-medium">Chapter Creation</h1>
               <span className="text-sm text-slate-700">
-                Complete all fields {completedFields}
+                Complete all fields {`(${completedFields}/${totalFields})`}
               </span>
             </div>
           </div>
@@ -96,6 +97,11 @@ const ChapterIdPage = async ({
             <IconBadge icon={Video} />
             <h2 className="text-xl">Add a video</h2>
           </div>
+          <ChapterVideoForm
+            courseId={params.courseId}
+            chapterId={params.chapterId}
+            initialData={chapter}
+          />
         </div>
       </div>
     </div>
