@@ -26,7 +26,6 @@ export const CategoryItem = ({
   const isSelected = currentCategoryId === value;
 
   const onClick = () => {
-    debugger;
     const url = qs.stringifyUrl(
       {
         url: pathname,
