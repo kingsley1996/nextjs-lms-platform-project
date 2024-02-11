@@ -52,7 +52,6 @@ export const VideoPlayer = ({
           onEnded={() => {}}
           autoPlay
           playbackId={playbackId}
-          theme="classic"
         />
       )}
     </div>
