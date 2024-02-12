@@ -1,4 +1,4 @@
-# Build an LMS Platform: Next.js 13, React, Stripe, Mux, Prisma, Tailwind, MySQL
+# Build an LMS Platform: Next.js 13, React, Stripe, Mux, Prisma, Tailwind, Postgresql
 
 Key Features:
 
@@ -17,7 +17,7 @@ Key Features:
 - Rich text editor for chapter description
 - Authentication using Clerk
 - ORM using Prisma
-- MySQL database using Planetscale
+- Postgresql database using Vercel
 
 ### Prerequisites
 
@@ -56,7 +56,7 @@ NEXT_PUBLIC_TEACHER_ID=
 
 ### Setup Prisma
 
-Add MySQL Database or Postgresql (I used vercel)
+Add Postgresql Database or MySQL (I used vercel)
 
 ```shell
 npx prisma generate
